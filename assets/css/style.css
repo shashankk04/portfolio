@@ -7,7 +7,24 @@
  * copyright 2022 @codewithsadee
  */
 
-
+ .hidden-content {
+  display: none;
+}
+.see-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #720e9e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.see-more-btn:hover {
+  background-color: #662d91;
+}
 
 
 
@@ -35,14 +52,14 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    hsl(270, 100%, 71%) 0%, /* Light purple */
+    hsla(280, 100%, 69%, 0) 50% /* Transparent */
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    hsla(270, 100%, 71%, 0.251) 0%, /* Semi-transparent light purple */
+    hsla(280, 100%, 68%, 0) 59.86% /* Transparent */
+  );
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(0, 0%, 25%) 0%, 
@@ -50,8 +67,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(270, 100%, 75%), /* Light purple */
+    hsl(280, 100%, 70%) /* Slightly darker purple */
   );
 
   /* solid */
@@ -63,11 +80,13 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --orange-yellow-crayola: hsl(270, 80%, 60%);
+  --vegas-gold: hsl(270, 70%, 55%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --bittersweet-shimmer: hsl(270, 60%, 65%);
+
+
 
   /**
    * typography
@@ -1880,3 +1899,73 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+#preloader {
+  background-color: #000;
+  background-image: url('/assets/images/loading.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.avatar-box {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.avatar-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid #D8BFD8; /* Initial border color */
+  animation: borderAnimation 4s linear infinite, rotateAnimation 4s linear infinite;
+  box-sizing: border-box; /* Ensure padding is included in the size */
+}
+
+.avatar-box img {
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1; /* Ensure the image stays on top */
+}
+
+/* Keyframes for the border color animation */
+@keyframes borderAnimation {
+  0% {
+    border-color: #D8BFD8; /* Thistle */
+  }
+  25% {
+    border-color: #DA70D6; /* Orchid */
+  }
+  50% {
+    border-color: #BA55D3; /* Medium Orchid */
+  }
+  75% {
+    border-color: #9932CC; /* Dark Orchid */
+  }
+  100% {
+    border-color: #D8BFD8; /* Thistle */
+  }
+}
+
+/* Keyframes for the rotate animation */
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

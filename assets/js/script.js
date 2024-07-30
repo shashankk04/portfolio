@@ -114,7 +114,14 @@ for (let i = 0; i < filterBtn.length; i++) {
 }
 
 
-
+function downloadResume() {
+  const a = document.createElement('a');
+  a.href = '../ShashankResume.pdf'; // replace with the correct path to your resume file
+  a.download = 'ShashankResume.pdf'; // this will be the default file name
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
@@ -156,4 +163,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
 
   });
+}
+function toggleContent(event, index) {
+  event.preventDefault();
+  
+  // Find the corresponding elements based on index
+  var hiddenContent = document.querySelectorAll('.hidden-content')[index - 1];
+  var seeMoreBtn = document.querySelectorAll('.see-more-btn')[index - 1];
+  
+  // Toggle the visibility of hidden content and update button text
+  if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
+    hiddenContent.style.display = 'inline';
+    seeMoreBtn.textContent = 'See Less';
+  } else {
+    hiddenContent.style.display = 'none';
+    seeMoreBtn.textContent = 'See More';
+  }
 }

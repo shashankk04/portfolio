@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Shashank's Portfolio</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/human.ico" type="image/x-icon">
 
   <!--
     - custom css link
@@ -32,6 +32,9 @@
   -->
 
   <main>
+    <div id="preloader">
+    
+    </div>
 
     <!--
       - #SIDEBAR
@@ -42,13 +45,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/dp.jpg" alt="Shashank Kumar" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Richard hanrick">Shashank</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Web developer | AI/ML Enthusiast <br> | Competitive Programmer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +77,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:richard@example.com" class="contact-link">shiv04313@gmail.com</a>
             </div>
 
           </li>
@@ -88,24 +91,12 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+12133522795" class="contact-link">+91 72258 70059</a>
             </div>
 
           </li>
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
+         
 
           <li class="contact-item">
 
@@ -114,9 +105,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title">COLLEGE</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>NIT Kurukshetra</address>
             </div>
 
           </li>
@@ -128,20 +119,14 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.linkedin.com/in/shashank-kumar-a1194b250/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://github.com/shashankk04" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
@@ -174,19 +159,19 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Experience</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Education</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>Skills</button>
           </li>
 
         </ul>
@@ -209,18 +194,15 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            Hello! I’m an engineering student currently in my pre-final year at NIT Kurukshetra, pursuing a B.Tech in Information Technology. My journey in tech is fueled by a love for transforming ideas into code that tackles real-world challenges. 🌟
+
+
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            I’m immersed in the fascinating realms of Machine Learning 🤖, Generative AI 🧠, and Web Development 🌐, constantly pushing the boundaries of what’s possible. Whether it’s designing intelligent systems, building dynamic websites, or cracking complex algorithms in competitive programming, I thrive on innovation and problem-solving.
           </p>
+          <button class="see-more-btn" onclick="downloadResume()">Download My Resume</button>
         </section>
 
 
@@ -237,28 +219,11 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/browser_11875792.png" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Fullstack Development</h4>
 
                 <p class="service-item-text">
                   High-quality development of sites at the professional level.
@@ -270,30 +235,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/cloud_12941085.png" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Machine Learning</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Developing ML projects and GenAI applications to solve real-world problems.
                 </p>
               </div>
 
@@ -308,7 +257,7 @@
           - testimonials
         -->
 
-        <section class="testimonials">
+        <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -404,7 +353,7 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
 
         <!--
@@ -456,7 +405,7 @@
           - clients
         -->
 
-        <section class="clients">
+        <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -500,7 +449,7 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
       </article>
 
@@ -512,13 +461,13 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="experience">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Experience</h2>
         </header>
 
-        <section class="timeline">
+        <!-- <section class="timeline"> 
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -573,7 +522,7 @@
 
           </ol>
 
-        </section>
+        </section> -->
 
         <section class="timeline">
 
@@ -589,51 +538,35 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">AI Intern @ NeoSapien</h4>
 
-              <span>2015 — Present</span>
+              <span>May, 2024 - August 2024</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                Conducted research and implemented the latest AI models and frameworks to enhance various functionalities of Neo OS. Fine-tuned language models to improve their performance and accuracy.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title">Web Developer @ ICell, NIT Kurukshetra</h4>
 
-              <span>2013 — 2015</span>
+              <span>March 2024 - Present</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Collaborated in the development of the Institute's Innovation Cell website, contributing to its successful implementation and functionality.
               </p>
 
             </li>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
+            
 
           </ol>
 
         </section>
 
-        <section class="skill">
+        <!-- <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
 
@@ -689,7 +622,7 @@
                 <div class="skill-progress-fill" style="width: 50%;"></div>
               </div>
 
-            </li>
+            </li> -->
 
           </ul>
 
@@ -705,10 +638,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
@@ -720,15 +653,11 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Web Development</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Machine Learning</button>
             </li>
 
           </ul>
@@ -752,16 +681,14 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Web Development</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Machine Learning</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
+
 
             </ul>
 
@@ -770,166 +697,80 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="https://github.com/shashankk04/discord-clone" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/discord11.png" alt="Discord" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Discord Clone</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Web development <br>This is a full-stack Discord clone developed using Next.js and React, with Tailwind CSS providing a modern and responsive interface.<span class="hidden-content"> It features real-time messaging with Socket.io, secure user authentication with Clerk, and audio and video calling capabilities using LiveKit. The database schema is designed and optimized with Prisma and MySQL, ensuring data integrity and performance.</span></p>
+                <button class="see-more-btn" onclick="toggleContent(event,1)">See More</button>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/shashankk04/Jarvis_Voice_Assistant-V2" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/aiassistant.png" alt="AI Assistant" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Jarvis AI Assistant</h3>
+
+                <p class="project-category">Generative AI <br>Jarvis Voice Assistant is an intelligent voice assistant leveraging state-of-the-art language models and speech recognition technologies.<span class="hidden-content"> It is designed to listen to real-time audio input, transcribe it, process the text using a sophisticated language model, and respond with generated speech. This assistant facilitates seamless human-computer interactions through natural language processing and speech synthesis.</span></p>
+                <button class="see-more-btn" onclick="toggleContent(event,2)">See More</button>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+              <a href="https://github.com/shashankk04/Bloggify" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/bloggify.png" alt="Bloggify" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
+            
+                <h3 class="project-title">Bloggify</h3>
+            
+                <p class="project-category">
+                  Web development <br>
+                  This is a responsive blogging web application developed using HTML, CSS, and EJS for dynamic and personalized content rendering. <span class="hidden-content">It enables users to compose, delete, and edit blogs with full CRUD functionalities, enhancing user engagement and interaction. The backend is implemented with Node.js and Express.js, providing a scalable server environment, and MongoDB is integrated for efficient data storage and retrieval, managing blog posts effectively.</span>
+                </p>
+                <button class="see-more-btn" onclick="toggleContent(event,3)">See More</button>
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="https://github.com/shashankk04/ToDoList" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/taskdoro.png" alt="TaskDoro" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title">TaskDoro</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Web development <br>This is a To-Do List web application created using Express.js, Node.js, MongoDB, and EJS templating.<span class="hidden-content"> It allows users to add, update, and delete tasks with full CRUD functionalities. The backend is built with Node.js and Express.js, and MongoDB manages data storage and retrieval. EJS templating provides a dynamic user interface, while user authentication secures personal to-do lists.</span></p>
+                <button class="see-more-btn" onclick="toggleContent(event,4)">See More</button>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
 
           </ul>
 
@@ -937,193 +778,60 @@
 
       </article>
 
-
-
-
-
       <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="education">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Education</h2>
         </header>
 
-        <section class="blog-posts">
+        <section class="timeline"> 
 
-          <ul class="blog-posts-list">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+            <h3 class="h3">Education</h3>
+          </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+          <ol class="timeline-list">
 
-                <div class="blog-content">
+            <li class="timeline-item">
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+              <h4 class="h4 timeline-item-title">National Institute Of Technology, Kuruksetra</h4>
 
-                    <span class="dot"></span>
+              <span>2022 - Present</span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
+              <p class="timeline-text">
+                Bachelor of Technology <br>
+                Specialization: Information Technology <br>
+                Grade: 9.3
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+              </p>
 
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
+            <li class="timeline-item">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
+              <h4 class="h4 timeline-item-title">New Digamber Public School</h4>
 
-                <div class="blog-content">
+              <span>Graduated in 2022</span>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+              <p class="timeline-text">
+                Highschool Diploma in PCM stream <br>
+                Grade: 96.2% - 12th Standard | 92.2% - 10th Standard
 
-                    <span class="dot"></span>
+              </p>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
+          </ol>
 
         </section>
 
@@ -1137,42 +845,31 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="skills">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">Skills</h2>
         </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
+        <h3 class="h3 service-title">Programming Languages:</h3>
+        <p >
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=cpp,c,python,java&perline=8" />
+          </a>
+        </p>
+        <br>
+        <h3 class="h3 service-title">Web Development:</h3>
+        <p >
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=html,css,javascript,bootstrap,react,nodejs,mongodb,express,tailwind,nextjs,mysql,jquery,git,github,postman&perline=8" />
+          </a>
+        </p>
+        <br>
+        <h3 class="h3 service-title">Machine Learning:</h3>
+        <p >
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=tensorflow,sklearn&perline=8" />
+          </a>
+        </p>
 
       </article>
 
@@ -1196,6 +893,15 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        loader.style.display = "none";
+      }, 1500); // 2000 milliseconds = 2 seconds
+    });
+
+  </script>
 </body>
 
 </html>
