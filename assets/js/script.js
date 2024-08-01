@@ -156,12 +156,12 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
-function toggleContent(event, index) {
+function toggleContent(event) {
   event.preventDefault();
   
-  // Find the corresponding elements based on index
-  var hiddenContent = document.querySelectorAll('.hidden-content')[index - 1];
-  var seeMoreBtn = document.querySelectorAll('.see-more-btn')[index - 1];
+  // Find the corresponding elements based on the clicked button
+  var seeMoreBtn = event.target;
+  var hiddenContent = seeMoreBtn.previousElementSibling.querySelector('.hidden-content');
   
   // Toggle the visibility of hidden content and update button text
   if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
@@ -172,3 +172,5 @@ function toggleContent(event, index) {
     seeMoreBtn.textContent = 'See More';
   }
 }
+
+
