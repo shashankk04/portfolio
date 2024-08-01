@@ -114,15 +114,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 }
 
 
-function downloadResume() {
-  const a = document.createElement('a');
-  a.href = '../ShashankResume.pdf';
- // replace with the correct path to your resume file
-  a.download = 'ShashankResume.pdf'; // this will be the default file name
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
