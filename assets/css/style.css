@@ -1900,7 +1900,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 #preloader {
   background-color: #000;
-  background-image: url('/assets/images/loading.gif');
+  background-image: url('https://shashankk04.github.io/portfolio/assets/images/loading.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
