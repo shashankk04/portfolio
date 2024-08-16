@@ -1971,3 +1971,37 @@ textarea.form-input::-webkit-resizer { display: none; }
 .hidden-content {
   display: none;
 }
+
+#background-audio {
+  display: none;
+}
+.audio-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.audio-button img {
+  width: 50px; /* Default size for larger screens */
+  height: 50px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .audio-button img {
+      width: 30px; /* Smaller size for mobile devices */
+      height: 30px;
+  }
+}
+
+.mobile-br {
+  display: none;
+}
+
+/* Show the <br> tag on mobile devices */
+@media (max-width: 600px) {
+  .mobile-br {
+      display: block;
+  }
+}

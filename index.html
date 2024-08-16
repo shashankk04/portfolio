@@ -35,6 +35,7 @@
     <div id="preloader">
     
     </div>
+    </div>
 
     <!--
       - #SIDEBAR
@@ -43,13 +44,13 @@
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
-
+        
         <figure class="avatar-box">
           <img src="./assets/images/dp.jpg" alt="Shashank Kumar" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Shashank</h1>
+          <h1 class="name" title="Shashank">Shashank</h1>
 
           <p class="title">Web developer | AI/ML Enthusiast <br> | Competitive Programmer</p>
         </div>
@@ -154,6 +155,12 @@
 
         <ul class="navbar-list">
 
+          <audio id="audio" src="beat.mp3"></audio>
+          <button id="toggleAudio" class="audio-button">
+              <img id="icon" src="https://www.svgrepo.com/show/498909/volume-medium.svg" alt="Audio Icon">
+          </button>
+
+
           <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
@@ -202,9 +209,13 @@
           <p>
             I’m immersed in the fascinating realms of Machine Learning 🤖, Generative AI 🧠, and Web Development 🌐, constantly pushing the boundaries of what’s possible. Whether it’s designing intelligent systems, building dynamic websites, or cracking complex algorithms in competitive programming, I thrive on innovation and problem-solving.
           </p>
-          <a href="https://shashankk04.github.io/portfolio/ShashankResume.pdf" download="ShashankResume">
-            <button class="see-more-btn">Download My Resume</button>
+          <a  href="https://shashankk04.github.io/portfolio/ShashankResume.pdf" target="_blank">
+            
+            <button style="display: flex; flex-direction: row; align-items: center;" class="see-more-btn"> 
+              <img style="width: 20px; filter: invert(); margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/128/860/860802.png" alt="Download"> Resume</button>
+
           </a>
+          <br class="mobile-br">
         </section>
 
 
@@ -362,7 +373,7 @@
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+        <!-- <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
 
@@ -400,7 +411,7 @@
 
           </section>
 
-        </div>
+        </div> -->
 
 
         <!--

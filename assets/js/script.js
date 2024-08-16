@@ -49,9 +49,9 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
 }
 
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+// // add click event to modal close button
+// modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+// overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
@@ -174,3 +174,27 @@ function toggleContent(event) {
 }
 
 
+function playAudio() {
+  var audio = document.getElementById('background-audio');
+  if (audio.paused) {
+      audio.play().catch(function(error) {
+          console.log('Audio playback failed:', error);
+      });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const audio = document.getElementById('audio');
+  const button = document.getElementById('toggleAudio');
+  const icon = document.getElementById('icon');
+
+  button.addEventListener('click', () => {
+      if (audio.paused) {
+          audio.play();
+          icon.src = 'https://www.svgrepo.com/show/498909/volume-medium.svg'; // Change to the path of your unmuted icon
+      } else {
+          audio.pause();
+          icon.src = 'https://www.svgrepo.com/show/498911/volume-mute.svg'; // Change to the path of your muted icon
+      }
+  });
+});
