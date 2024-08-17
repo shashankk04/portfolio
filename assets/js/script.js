@@ -191,10 +191,10 @@ document.addEventListener('DOMContentLoaded', () => {
   button.addEventListener('click', () => {
       if (audio.paused) {
           audio.play();
-          icon.src = 'https://www.svgrepo.com/show/498909/volume-medium.svg'; // Change to the path of your unmuted icon
+          icon.src = 'https://www.svgrepo.com/show/498909/volume-medium.svg'; // Unmuted icon
       } else {
           audio.pause();
-          icon.src = 'https://www.svgrepo.com/show/498911/volume-mute.svg'; // Change to the path of your muted icon
+          icon.src = 'https://www.svgrepo.com/show/498911/volume-mute.svg'; // Muted icon
       }
   });
 });
