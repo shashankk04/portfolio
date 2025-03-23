@@ -672,7 +672,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Machine Learning</button>
+              <button data-filter-btn data-category="machine learning">ML/GenAI</button>
             </li>
 
           </ul>
@@ -700,7 +700,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Machine Learning</button>
+                <button data-select-item data-category="machine learning">ML/GenAI</button>
               </li>
 
 
@@ -710,6 +710,25 @@
           </div>
 
           <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/shashankk04/MedicalApp" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/medibot.png" alt="Medibot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MediBot - AI-Powered Medical Assistant</h3>
+
+                <p class="project-category">Generative AI <br>Developed an AI medical assistant using LLaMA 3 and voice recognition for hands-free interaction and real-time web searches to provide accurate medical information.<span class="hidden-content"> Integrated memory retention of past conversations for personalized responses and decision-making on when to
+                perform web searches. Built a user-friendly, dynamic interface with Streamlit, offering a seamless experience for users.
+                </span></p>
+                <button class="see-more-btn" onclick="toggleContent(event)">See More</button>
+              </a>
+            </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://github.com/shashankk04/discord-clone" target="_blank">
